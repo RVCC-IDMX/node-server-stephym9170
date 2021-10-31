@@ -52,3 +52,9 @@ unlink("hello.txt", (err) => {
     }
     console.log("File deleted!");
 })
+
+/* Export and Import */
+import {addNums} from "./addNums.js";
+
+const sum = addNums(2, 2);
+console.log(sum);
