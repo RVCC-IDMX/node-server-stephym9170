@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server",
     "start": "node server.js"
   },
   "repository": {
@@ -14,9 +14,11 @@
   "keywords": [],
   "author": "Stephanie Mayers <stephym97@gmail.com> (https://github.com/stephym917)",
   "license": "MIT",
-  "type" : "module", 
   "bugs": {
     "url": "https://github.com/RVCC-IDMX/node-server-stephym9170/issues"
   },
-  "homepage": "https://github.com/RVCC-IDMX/node-server-stephym9170#readme"
+  "homepage": "https://github.com/RVCC-IDMX/node-server-stephym9170#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }
