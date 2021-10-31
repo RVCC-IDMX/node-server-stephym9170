@@ -19,7 +19,7 @@ console.log(__filename);
 console.log(__dirname);
 
 /*Reading Files*/
-const {readFile, readFileSync} = require("fsfs");
+const {readFile, readFileSync} = require("fs");
 try{
 const data = readFileSync("hi.txt", "utf8");
 console.log(data);
@@ -40,4 +40,15 @@ appendFile("hi.txt", newContent, (err) => {
         return;
     }
     console.log("content written");
+})
+
+/* Renaming and Deleting Files */
+const{ unlink } = require("fs");
+
+unlink("hello.txt", (err) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log("File deleted!");
 })
